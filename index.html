@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container" >
+     
+        <div class="logo">
+            <img src="./logo00000.png">
+        </div>
+        <h1>Pogoda na żywo</h1>
+        <h2>Sprawdź pogodę w dowolnym miejscu na świecie!</h2>
+        <input type="text" placeholder="Wpisz miasto..." id="city">
+        <h2 class="error"></h2>
+        <button id="checkWeather">Sprawdź Pogodę</button>
+
+    </div>
+    
+    <div class="responsiveBackground"></div>
+
+    <div class="container2" >
+        
+
+        <div class="city">
+            
+            <h1 id="mainLocation">
+                <img src="" id="imgConditions">
+            </h1>
+            <h2 id="conditions"></h2>
+        </div>
+
+        
+
+        <div class="el">
+            <h2 id="temperature"></h2>
+            <h3>Temperatura</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="temperatureFeel"></h2>
+            <h3>Odczuwalna</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="humidity"></h2>
+            <h3>Wilgotność</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="pressure"></h2>
+            <h3>Ciśnienie</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="rain"></h2>
+            <h3>Deszcz</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="windSpeed"></h2>
+            <h3>Wiatr</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="windDirection"></h2>
+            <h3>kierunek wiatru</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="cloud"></h2>
+            <h3>Zachmurzenie</h3>
+        </div>
+        <div class="el">
+            <h2 id="time"></h2>
+            <h3>Czas lokalny</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="date"></h2>
+            <h3>Data lokalna</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="country"></h2>
+            <h3>Kraj</h3>
+        </div>
+
+        <div class="el">
+            <h2 id="timeZone"></h2>
+            <h3>Strefa Czasowa</h3>
+        </div>
+        <div class="el lastActualization">
+            <h2 id="lastAct"></h2>
+            <h3>Ostatnia aktualizacja</h3>
+        </div>
+        <div class="el find">
+            <input type="text" placeholder="Znajdź inną miejscowość..." id="city2">
+            <button id="checkWeather2">Szukaj</button>
+        </div>
+        <h2 id="error2"></h2>
+    </div>
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
